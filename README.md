@@ -21,9 +21,6 @@
 
 V2 of hat.sh introduced memory efficient in-browser large file chunked encryption using streams with libsodium.
 
-## Usage
-
-![how-to-use-gif](https://i.imgur.com/LbT9UGg.gif)
 
 <br>
 
