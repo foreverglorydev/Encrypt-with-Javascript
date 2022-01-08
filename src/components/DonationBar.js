@@ -28,7 +28,7 @@ export default function DonationBar() {
 
   return (
     <div>
-      <Hidden xsDown>
+      {/* <Hidden xsDown>
       <Snackbar
       style={{zIndex: 0}}
         anchorOrigin={{
@@ -39,7 +39,7 @@ export default function DonationBar() {
         autoHideDuration={10000}
         onClose={handleClose}
       >
-        {/* <Alert
+        <Alert
           severity="info"
           action={
             <Button
@@ -75,9 +75,9 @@ export default function DonationBar() {
           }
         >
           {t("donation_message")}
-        </Alert> */}
+        </Alert>
       </Snackbar>
-      </Hidden>
+      </Hidden> */}
     </div>
   );
 }

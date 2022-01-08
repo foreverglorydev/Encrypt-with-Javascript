@@ -48,6 +48,7 @@ const en_US = {
   change_file: "Change File",
   add_files: "Add Files",
   next: "Next",
+  upload: "Upload",
   back: "Back",
   error: "Error",
   required: "Required",

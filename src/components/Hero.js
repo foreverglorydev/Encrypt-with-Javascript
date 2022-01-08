@@ -4,6 +4,9 @@ import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import { getTranslations as t } from "../../locales";
 
+// progressbar part here. bozo!
+import NextNprogress from 'nextjs-progressbar';
+
 const useStyles = makeStyles((theme) => ({
   heroTitle: {
     color: theme.palette.diamondBlack.main,
@@ -34,6 +37,13 @@ export default function Hero() {
       >
         {t('sub_title')}
         <br />
+        <NextNprogress
+          color="#29D"
+          startPosition={0.3}
+          stopDelayMs={200}
+          height={3}
+          showOnShallow={true}
+        />
       </Typography>
     </Container>
   );

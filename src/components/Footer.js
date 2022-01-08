@@ -183,9 +183,7 @@ export default function Footer() {
                   fullWidth
                 />
                 <DialogContentText id="alert-dialog-description">
-                  Hat.sh is an open-source application. The project is
-                  maintained in my free time. Donations of any size are
-                  appreciated.
+                  Encrypt Files with Javascripts
                 </DialogContentText>
               </DialogContent>
               <DialogActions>

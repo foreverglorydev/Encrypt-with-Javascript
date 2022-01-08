@@ -43,6 +43,10 @@ import CloseIcon from "@material-ui/icons/Close";
 import AddIcon from "@material-ui/icons/Add";
 import RotateLeftIcon from "@material-ui/icons/RotateLeft";
 import { getTranslations as t } from "../../locales";
+
+// progressbar part here. bozo!
+import NextNprogress from 'nextjs-progressbar';
+
 import {
   List,
   ListItem,
@@ -222,6 +226,7 @@ export default function EncryptionPanel() {
 
   const [activeStep, setActiveStep] = useState(0);
 
+  //file upload prepare bozo!
   const [Files, setFiles] = useState([]);
 
   const [currFileState, setCurrFileState] = useState(0);
@@ -260,6 +265,9 @@ export default function EncryptionPanel() {
 
   const [pkAlert, setPkAlert] = useState(false);
 
+  
+
+
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop: (acceptedFiles) => {
       handleFilesInput(acceptedFiles);
@@ -269,8 +277,17 @@ export default function EncryptionPanel() {
     disabled: activeStep !== 0,
   });
 
-  const handleNext = () => {
+  const handleNext = async () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    //Put code of upload logic in this part. bozo!
+    const body = new FormData();
+    // body.append("file", Files);
+    // console.log(Files);
+    // const response = await fetch("/", {
+    //   method: "POST",
+    //   body
+    // });
+    // console.log(response);
   };
 
   const handleBack = () => {
@@ -617,6 +634,7 @@ export default function EncryptionPanel() {
 
   return (
     <div className={classes.root} {...getRootProps()}>
+  
       <Snackbar
         anchorOrigin={{
           vertical: "bottom",
@@ -769,14 +787,14 @@ export default function EncryptionPanel() {
                   onClick={handleNext}
                   className={`${classes.nextButton} nextBtnHs submitFile`}
                 >
-                  {t("next")}
+                  {t("upload")}
                 </Button>
               </div>
             </div>
 
-            <Typography className={classes.offline}>
+            {/* <Typography className={classes.offline}>
               {t("offline_note")}
-            </Typography>
+            </Typography> */}
           </StepContent>
         </Step>
 

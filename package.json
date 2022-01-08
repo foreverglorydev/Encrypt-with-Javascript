@@ -17,6 +17,7 @@
     "libsodium-wrappers": "^0.7.9",
     "marked": "4.0.8",
     "next": "^12.0.7",
+    "nextjs-progressbar": "^0.0.13",
     "prismjs": "^1.25.0",
     "qrcode.react": "^1.0.1",
     "react": "^17.0.2",
