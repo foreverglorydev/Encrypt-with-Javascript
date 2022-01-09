@@ -68,7 +68,7 @@ const zh_CN = {
     downloading_file: "下载中", // Downloading...
     checking_file: "检查文件中", // Checking file...
     page_close_alert: "下载文件中，请勿关闭页面！", // Don't close the page while files are downloading!
-    offline_note: "文件不会上传服务器，所有操作都在您的浏览器离线运行", // Files are not uploaded to a server, everything is done offline in your browser.
+    offline_note: "文件不会上传服务器，所有操作都在您的浏览器离线运行", // Files are uploaded to a server, everything is done offline in your browser.
 
     // Password Strength Check
     very_weak: "非常弱", // Very Weak (guessable)
