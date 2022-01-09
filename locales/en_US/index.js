@@ -69,7 +69,7 @@ const en_US = {
   downloading_file: "Downloading...",
   checking_file: "Checking file...",
   page_close_alert: "Don't close the page while files are downloading!",
-  offline_note: "Files are uploaded to a server, everything is done offline in your browser.",
+  offline_note: "Files are uploaded to a server, everything is done in your browser.",
   
   // Password Strength Check
   very_weak: "Very Weak (guessable)",
