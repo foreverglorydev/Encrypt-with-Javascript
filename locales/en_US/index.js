@@ -16,7 +16,7 @@ const en_US = {
   faq: "FAQ",
   technical_details: "Technical-Details",
   changelog: "Changelog",
-  donation_message: "Love hat.sh? You can donate to support the project.",
+  donation_message: "Love this production? You can donate to support the project.",
 
   // Settings
   settings: "Settings",
@@ -31,7 +31,7 @@ const en_US = {
   reset: "Reset",
   guide: "Guide",
   multiple_tabs_alert: "Multiple tabs alert",
-  multiple_tabs_alert_notice_one: "Looks like that Hat.sh is already open in another window/tab.",
+  multiple_tabs_alert_notice_one: "Looks like that project is already open in another window/tab.",
   multiple_tabs_alert_notice_two: "Please avoid encrypting/decrypting files in different tabs at the same time.",
   understand: "I UNDERSTAND",
 
@@ -120,8 +120,8 @@ const en_US = {
   choose_files_dec: "Choose files to decrypt",
   sender_key_loaded: "Sender's public key is loaded, please select the encrypted file.",
   recipient_key_loaded: "Recipient's public key is loaded, please select a file to encrypt.",
-  file_not_encrypted_corrupted: "This file was not encrypted using hat.sh or the file may be corrupted!",
-  old_version: "This file was encrypted using an older version of hat.sh, you can decrypt this file by visiting the v1 app.",
+  file_not_encrypted_corrupted: "This file was not encrypted using this or the file may be corrupted!",
+  old_version: "This file was encrypted using an older version of this, you can decrypt this file by visiting the v1 app.",
   file_mixup: "Files selected for decryption have to be encrypted using the same method, either by password or public key. Choose files that match.",
   enter_password_dec: "Enter the decryption password",
   enter_keys_dec: "Enter sender's Public key and your Private Key",

@@ -36,7 +36,7 @@ export default function Hero() {
         className={classes.heroSubTitle}
       >
         {t('sub_title')}
-        <br />
+        <br/>
         <NextNprogress
           color="#29D"
           startPosition={0.3}

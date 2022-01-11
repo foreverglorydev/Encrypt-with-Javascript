@@ -16,7 +16,7 @@ const fr_FR = {
   faq: "FAQ",
   technical_details: "Détails techniques",
   changelog: "Journaux",
-  donation_message: "Vous amez hat.sh? Vous pouvez donner pour supporter le projet.",
+  donation_message: "Vous amez this? Vous pouvez donner pour supporter le projet.",
 
   // Settings
   settings: "Paramètre",
@@ -31,7 +31,7 @@ const fr_FR = {
   reset: "Reset",
   guide: "Guide",
   multiple_tabs_alert: "Alerte à cause de plusieurs fenêtres",
-  multiple_tabs_alert_notice_one: "Hat.sh semble être ouvert dans une autre fenêtre.",
+  multiple_tabs_alert_notice_one: "this semble être ouvert dans une autre fenêtre.",
   multiple_tabs_alert_notice_two: "Merci d'éviter le chiffrement/déchiffrement de fichier dans plusieurs fenêtres.",
 
   // Common
@@ -108,8 +108,8 @@ const fr_FR = {
   choose_files_dec: "Choisir un fichier à déchiffer",
   sender_key_loaded: "Clé publique de l'expéditeur chargée, merci de choisir un fichier chiffré.",
   recipient_key_loaded: "Clé publique du destinaire, merci de choisir un fichier à chiffrer.",
-  file_not_encrypted_corrupted: "Ce fichier n'a pas été chiffré avec hat.sh ou le fichier est peut être corrompu!",
-  old_version: "Ce fichier a été chiffré avec une ancienne version de hat.sh, vous pouvez le déchiffrer sur le site en v1.",
+  file_not_encrypted_corrupted: "Ce fichier n'a pas été chiffré avec this ou le fichier est peut être corrompu!",
+  old_version: "Ce fichier a été chiffré avec une ancienne version de this, vous pouvez le déchiffrer sur le site en v1.",
   file_mixup: "Les fichiers sélectionnés pour le déchiffrement doivent avoir été chiffrés avec la même méthode soit par mot de passe ou clé publique. Choisir des fichiers correspondants.",
   enter_password_dec: "Entrer le mot de passe pour déchiffrer",
   enter_keys_dec: "Entrer la clé publique du destinataire et votre clé privée",

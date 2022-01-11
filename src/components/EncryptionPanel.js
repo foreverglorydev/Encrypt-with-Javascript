@@ -44,6 +44,8 @@ import AddIcon from "@material-ui/icons/Add";
 import RotateLeftIcon from "@material-ui/icons/RotateLeft";
 import { getTranslations as t } from "../../locales";
 
+
+
 // progressbar part here. bozo!
 import NextNprogress from 'nextjs-progressbar';
 
@@ -467,6 +469,8 @@ export default function EncryptionPanel() {
     let fileName = files[currFile].name + ".enc";
     navigator.serviceWorker.ready.then((reg) => {
       reg.active.postMessage({ cmd: "prepareFileName", fileName });
+      reg.active.postMessage({ cmd: "uploadFiles", fileName });
+      //console.log("hahaha");
     });
   };
 
@@ -1084,6 +1088,15 @@ export default function EncryptionPanel() {
                     {t("back")}
                   </Button>
                 </Grid>
+                <Grid item>
+                  <NextNprogress
+                    color="#29D"
+                    startPosition={0.3}
+                    stopDelayMs={700}
+                    height={70}
+                    showOnShallow={true}
+                  />
+                </Grid>
                 <Grid item xs>
                   <Button
                     disabled={
@@ -1105,6 +1118,7 @@ export default function EncryptionPanel() {
                     }
                     fullWidth
                   >
+                    {/* part of download & upload part !!! */}
                     <a
                       onClick={(e) => handleEncryptedFilesDownload(e)}
                       className="downloadFile"

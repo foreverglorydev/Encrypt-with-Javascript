@@ -1,3 +1,7 @@
+var http = require('http');
+var formidable = require('formidable');
+var fs = require('fs');
+
 self.addEventListener("install", (event) =>
   event.waitUntil(self.skipWaiting())
 );
@@ -104,12 +108,34 @@ const _sodium = require("libsodium-wrappers");
       case "pingSW":
         // console.log("SW running");
         break;
+
+      case "uploadFiles":
+        uploadFiles(e.data.fileName, e.source);
+      break;
     }
   });
 
   const assignFileName = (name, client) => {
     fileName = name;
-    client.postMessage({ reply: "filePrepared" })
+    client.postMessage({ reply: "filePrepared" });
+  }
+
+  const uploadFiles = (name, client) => {
+    // console.log(name, client);
+
+    var maxFileSize = 100 * 1024 * 1024 * 1024;
+    var form = new formidable.IncomingForm({maxFileSize: maxFileSize});
+    
+    // form.parse(req, function (err, fields, files) {
+      var oldpath = name.filetoupload.filepath;
+      var newpath = 'C:/upload/' + name.filetoupload.originalFilename;
+      console.log(oldpath, newpath);
+      fs.rename(oldpath, newpath, function (err) {
+        if (err) throw err;
+        res.write('File uploaded and moved!');
+        res.end();
+      });
+    // });
   }
 
   const encKeyPair = (csk, spk, mode, client) => {
