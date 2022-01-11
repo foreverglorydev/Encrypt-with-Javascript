@@ -151,7 +151,7 @@ const en_US = {
   decrypt_another_file: "Decrypt Another File",
   limited_safari: "Safari browsers have limited experience (single file, 1GB)",
   limited_mobile: "Mobile browsers have limited experience (single file, 1GB)",
-  limited_private: "You have limited experience (single file, 1GB) due to Private browsing.",
+  limited_private: "You have limited experience (single file, 100GB) due to Private browsing.",
   file_too_big: "File is too big!",
   choose_file_1gb: "Choose a file up to 1GB.",
   encrypt_file: "Encrypt file",

@@ -149,7 +149,7 @@ const zh_CN = {
     decrypt_another_file: "解密其他文件", // Decrypt Another File
     limited_safari: "Safari 浏览器限制：单文件，最大 1G", // Safari browsers have limited experience (single file, 1GB)
     limited_mobile: "手机浏览器限制：单文件，最大 1G", // Mobile browsers have limited experience (single file, 1GB)
-    limited_private: "隐私浏览限制：单文件，最大 1G", // You have limited experience (single file, 1GB) due to Private browsing.
+    limited_private: "隐私浏览限制：单文件，最大 1G", // You have limited experience (single file, 100GB) due to Private browsing.
     file_too_big: "文件太大！", // File is too big!
     choose_file_1gb: "文件最大为 1G ", // Choose a file up to 1GB.
     encrypt_file: "加密文件", // Encrypt file
